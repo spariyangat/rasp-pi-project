@@ -26,7 +26,6 @@ def set_angle(angle):
     duty = 2 + (angle / 18)  #convert the angle (0–180 deg) to duty cycle
     pwm.ChangeDutyCycle(duty)
     time.sleep(0.5)
-    pwm.ChangeDutyCycle(0)  # stop sending signal (prevents buzzing)
 
 # Helper function to keep the angle in the 0-180 degree range
 def clamp_angle(angle):
