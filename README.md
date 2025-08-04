@@ -15,15 +15,15 @@ These projects helped me gain experience with analog-to-digital conversion using
 Simulates the manual control of an aircraft’s wing flap using a joystick. The joystick’s vertical position (Y-axis) directly controls the servo’s angle, simulating actuator control. The system “stays in place” — the flap remains at the last joystick input position
 
 Flight behavior mapping:
-- Pushing the joystick forward (Y-axis down) tilts the flap down → increases lift → nose pitches up
-- Pulling the joystick back raises the flap → reduces lift → nose pitches down
+- Pushing the joystick forward/up → tilts the flap trailing edge up (elevator deflects up) → nose pitches up → "plane" climbs
+- Pulling the joystick back/down → tilts the flap trailing edge down (elevator deflects down) → nose pitches down → "plane" descends
 
 Note: This is a low-cost, **proof-of-concept prototype** built from scrap cardboard and simple components. The focus is on replicating core control behaviors, not creating a polished or scaled model.
 
 ### Features
 - Real-time analog input from joystick using MCP3008
 - Servo control via gpiozero with PiGPIOFactory (software PWM)
-- Safe shutdown using bkeyboard interrupt
+- Safe shutdown using keyboard interrupt
 - Live terminal output for debugging and feedback
 
 ### Skills Applied
