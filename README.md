@@ -33,18 +33,46 @@ Note: This is a low-cost, **proof-of-concept prototype** built from scrap cardbo
 - Debugging unstable servo movement and electrical noise
 - Clean, structured Python code
 
+### Media
+
+**Raspberry Pi Board**  
+![Raspberry Pi](media/raspberry_pi.jpg)
+
+**Flap Setup – Upside-Down View**  
+![Flap Setup](media/flap_setup.jpg)
+
+**Close-up of Flap Mechanism**  
+![Flap Underside](media/flap_underside.jpg)
+
+**Breadboard Wiring**  
+![Flap Breadboard](media/flap_breadboard.jpg)
+
+**Demo Video**  
+[▶ Watch flap_demo.mp4](media/flap_demo.mp4)
+
+**Setup Video**  
+[▶ Watch flap_setup.mp4](media/flap_setup.mp4)
+
 ---
 
-## Previous Mini Project: Servo Motor Control with Pushbuttons
+## Previous Mini Project: Button Servo Control
 
 ### Description
-Controlled a servo motor using two pushbuttons — one to increase angle, one to decrease. An LED turns on while the servo moves. This project introduced GPIO input, PWM, and control logic fundamentals.
+Before the joystick-based system, I built a simple button-controlled servo project where two pushbuttons were used — one to increase angle, one to decrease. An LED turns on while the servo moves. This project introduced GPIO input, PWM, and control logic fundamentals.
 
 ### Features
 - Button-based servo angle control (0°–180°)
 - Debouncing using delay logic
 - LED activity indicator
 - Started with RPi.GPIO, later switched to gpiozero
+
+### Media
+
+**Button Control Setup**  
+![Button Project Setup](media/button_servo_setup.jpg)
+
+**Demo Video**  
+[▶ Watch button_control_demo.mp4](media/button_control_demo.mp4)
 
 --- 
 
@@ -71,7 +99,7 @@ Controlled a servo motor using two pushbuttons — one to increase angle, one to
 ---
 
 ## Resources Used
-gpiozero Official Documentation: https://gpiozero.readthedocs.io/en/stable/index.html
-Raspberry Pi Physical Computing Guide: https://projects.raspberrypi.org/en/projects/physical-computing/0 
-Youtube video on servo motor control: https://www.youtube.com/watch?v=_fdwE4EznYo
-Youtube video on MCP3008 wiring: https://www.youtube.com/watch?v=tn8sEqq0sJc 
+- gpiozero Official Documentation: https://gpiozero.readthedocs.io/en/stable/index.html
+- Raspberry Pi Physical Computing Guide: https://projects.raspberrypi.org/en/projects/physical-computing/0 
+- Youtube video on servo motor control: https://www.youtube.com/watch?v=_fdwE4EznYo
+- Youtube video on MCP3008 wiring: https://www.youtube.com/watch?v=tn8sEqq0sJc 

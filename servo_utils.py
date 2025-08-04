@@ -1,5 +1,5 @@
 
-# Helper functions for servo, joystick, button, and LED testing on Raspberry Pi.
+# Helper functions for servo, joystick, button, and LED testing/debugging
 
 from gpiozero import Servo, MCP3008
 from gpiozero.pins.pigpio import PiGPIOFactory
@@ -100,3 +100,24 @@ def servo_six_test():
             sleep(0.4)
     except KeyboardInterrupt:
         print("Exiting servo_six_test.")
+
+def button_led_test():
+    print("Button-LED test started!")
+    GPIO.setmode(GPIO.BCM)
+
+    LED_PIN = 18
+    BUTTON_PIN = 4
+
+    GPIO.setup(LED_PIN, GPIO.OUT)
+    GPIO.setup(BUTTON_PIN, GPIO.IN)
+    GPIO.output(LED_PIN, GPIO.LOW)  # Start with LED off
+
+    try: 
+        while True:
+            if GPIO.input(BUTTON_PIN) == GPIO.HIGH:
+                GPIO.output(LED_PIN, GPIO.HIGH)
+            else:
+                GPIO.output(LED_PIN, GPIO.LOW)
+            time.sleep(0.1)
+    except KeyboardInterrupt:
+        GPIO.cleanup()
