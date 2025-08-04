@@ -76,6 +76,16 @@ Before the joystick-based system, I built a simple button-controlled servo proje
 
 --- 
 
+## Project Files Overview
+
+- `MAIN.py`: Main script for simulating aircraft flap movement with a servo motor. 
+- `servo_utils.py`: Helper functions for debugging/testing
+- `button_servo_control.py`: Script for button servo control mini project
+- `RPI_GPIO_test.py`: An early version using `RPi.GPIO` before switching to `gpiozero` (kept for comparison and learning). 
+- `media/`: Contains demo images and videos of the project in action.
+
+---
+
 ## Hardware Used
 - Raspberry Pi Model 2 B
 - SG90 Micro Servo Motor
